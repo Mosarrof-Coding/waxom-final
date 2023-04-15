@@ -1,0 +1,45 @@
+@import "../variable/variabls";
+@import "../mixins/mixin";
+#counter{
+    padding: 60px 0;
+    background: linear-gradient(to right, $grdleft, $grdright);
+    .countItm{
+        position: relative;
+        text-align-last: center;
+        margin-bottom: 30px;
+        padding: 10px;
+        .iconstep{
+            width: 100%;
+            display: block;
+            margin: auto;
+            img{
+                width: auto;
+            }
+        }
+        .number{
+            font-size: 40px;
+            font-weight: 300;
+            display: block;
+            color:$white;
+        }
+        .countTypes{
+            font-size: 14px;
+            font-weight: 300;
+            color:$ancorhov;
+            text-transform: capitalize;
+            display:block;
+            color:$ancorhov;
+            padding-bottom: 20px;
+        }
+        &::after{
+            width: 30px;
+            height: 3px;
+            background: $d1d1d1;
+            position: absolute;
+            content: "";
+            left: 50%;
+            bottom: 5%;
+            transform: translateX(-50%);
+        }
+    }
+}

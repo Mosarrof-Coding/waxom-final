@@ -1,0 +1,51 @@
+@import "../mixins/mixin";
+@import "../variable/variabls";
+/* nav part---------------*/
+.navbar{
+    padding:15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .navbar-brand{
+        img{
+            background: transparent;
+        }
+    }
+    .mecollapse{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color:$white;
+                    margin-left: 30px;
+                    padding: 0;
+                    &:hover{
+                        color:$ancorhov;
+                    }
+                }
+            }
+        }
+    }
+    .mybtntogglar{
+        border: none !important;
+    }
+    .mybtntogglar:focus{
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .mytoggler{
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        .line{
+            width: 30px;
+            height: 3px;
+            background: $white;
+            display: block;
+        }
+    }
+}

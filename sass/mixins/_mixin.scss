@@ -1,0 +1,27 @@
+@mixin h4{
+    font-size: 30px;
+    font-weight: 600;
+    color:$h6;
+    text-transform: capitalize;
+}
+@mixin p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    display: block;
+    text-transform: capitalize;
+    color:$para;
+    max-width: 730px;
+    margin: auto;
+}
+@mixin cmnBtn{
+    padding:21px 38px 18px 38px;
+    display: inline-block;
+    border-bottom: 3px solid $btnborder;
+    font-size: 14px;
+    font-weight: 800;
+    color:$white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: $btnbgcolor;
+}

@@ -1,0 +1,34 @@
+@import "../mixins/mixin";
+@import "../variable/variabls";
+/* wordpress part---------------*/
+#wordpress{
+    padding:22px 0;
+    background:linear-gradient(to right, $grdleft, $grdright);
+    .wordpress_heading{
+        padding: 20px 0;
+        h5{
+            font-size:28px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:$white;
+            .waxom{
+                color:$ancorhov
+            }
+        }
+        p{
+            color:$fontP;
+            font-size:18px;
+            text-transform: capitalize;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+    }
+    .bannerbutton{
+        display: block;
+        text-align: right;
+        padding: 20px 0;
+        button{
+            @include cmnBtn;
+        }
+    }
+}

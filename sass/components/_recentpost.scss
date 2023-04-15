@@ -1,0 +1,126 @@
+@import "../variable/variabls";
+@import "../mixins/mixin";
+#recentpost{
+    padding: 80px 0;
+    .postheading{
+        text-align: center;
+        h4{
+            @include h4;
+        }
+        p{
+            @include p;
+        }
+    }
+    .img2{
+        width: 100%;
+        margin-top: 24px;
+        .img{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .overlap{
+                padding: 10px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                .dating{
+                    display:inline-block;
+                    .date{
+                        font-size: 20px;
+                        font-weight: 400;
+                        display: grid;
+                        place-items: center;
+                        background:#363636;
+                        margin: 0 !important;
+                        color:$white;
+                        padding:0 10px;
+                    }
+                    .month{
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        font-weight: 300;
+                        display: grid;
+                        place-items: center;
+                        margin: 0 !important;
+                        background: #252525;
+                        color:$white;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        .txtdiv{
+            padding: 20px;
+            .picfeature{
+                color:$h6;
+                display: block;
+                font-size: 20px;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            .propertiesTxt{
+                color:$d1d1d1;
+                display: block;
+                font-size: 14px;
+            }
+            .moreknow{
+                display: block;
+                text-transform: capitalize;
+                color:$ancorhov;
+                margin-top: 20px;
+            }
+        }
+        &:hover{
+            .overlap{
+                background: #111111b2;
+            }
+            .txtdiv{
+                background: #362f2d;
+            }
+            .propertiesTxt{
+                color:$white;
+            }
+            .picfeature{
+                color:$ancorhov;
+            }
+            .moreknow{
+                color:$ancorhov;
+            }
+            .img{
+                .overlap{
+                    .dating{
+                        .date{
+                            background: $ancorhov;
+                        }
+                        .month{
+                            background: #a48d72;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+    .slickbtn{
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+        .nbt{
+            padding: 5px 20px;
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+            background: $ancorhov;
+            color:$white;
+            &:hover{
+                background: $h6;
+            }
+        }
+    }
+}

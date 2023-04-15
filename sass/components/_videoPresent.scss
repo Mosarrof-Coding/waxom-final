@@ -1,0 +1,32 @@
+@import "../mixins/mixin";
+@import "../variable/variabls";
+/* videoPresent part---------------*/
+#videoPresent{
+    background: url(../images/playBanner.jpg) no-repeat center/cover;
+    .colorlap{
+        width: 100%;
+        background: $videoplayer;
+        padding: 210px 0 255px 0;
+        .presentHeading{
+            text-align: center;
+            .iconPlay{
+                width: 85px;
+                height: 85px;
+                border-radius: 50%;
+                background: $videoplayer;
+                display: grid;
+                place-items: center;
+                margin: auto;
+                margin-bottom: 40px;
+            }
+            h4{
+                color:$white !important;
+                @include h4;
+            }
+            p{
+                color:$white !important;
+                @include p;
+            }
+        }
+    }
+}

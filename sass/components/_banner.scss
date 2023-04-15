@@ -1,0 +1,48 @@
+@import "../mixins/mixin";
+@import "../variable/variabls";
+/* banner part---------------*/
+#banner{
+    width: 100%;
+    display: block;
+    background: url(../images/Waxom-bannerjpg.jpg) no-repeat center/cover;
+    .banner_overlay{
+        width: 100%;
+        display: block;
+        background: $banback;
+        padding: 372px 0 380px 0;
+        .banner_heading{
+            h3{
+                text-transform: capitalize;
+                display: block;
+                font-size: 36px;
+                font-weight: 500;
+                color:$white;
+            }
+            h1{
+                text-transform: capitalize;
+                font-size: 52px;
+                font-weight: 800;
+                color:$white;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .bannerP{
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 300;
+                color:$white;
+                line-height: 24px;
+                display: block;
+                max-width: 540px;
+                margin: 0 auto;
+            }
+            .bannerbutton{
+                margin-top: 52px;
+                button{
+                    @include cmnBtn;
+                }
+            }
+        }
+    }
+
+}

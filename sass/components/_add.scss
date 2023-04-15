@@ -1,0 +1,14 @@
+@import "../variable/variabls";
+@import "../mixins/mixin";
+#add{
+    background:  url(../images/addbackgrnd.png) no-repeat center/cover;
+    padding: 130px 0;
+    .addonImg{
+        width: 100%;
+        text-align: center;
+        img{
+            width: 70%;
+            margin: 50px 0;
+        }
+    }
+}

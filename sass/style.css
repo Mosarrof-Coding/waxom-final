@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+p {
+  text-transform: capitalize;
+  font-family: "montseerat", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* nav part---------------*/
+.navbar {
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.navbar .navbar-brand img {
+  background: transparent;
+}
+.navbar .mecollapse .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-left: 30px;
+  padding: 0;
+}
+.navbar .mecollapse .navbar-nav .nav-item .nav-link:hover {
+  color: #c7b299;
+}
+
+/* banner part---------------*/
+#banner {
+  width: 100%;
+  display: block;
+  background: url(../images/Waxom-bannerjpg.jpg) no-repeat center/cover;
+}
+#banner .banner_overlay {
+  width: 100%;
+  display: block;
+  background: rgba(18, 18, 18, 0.7019607843);
+  padding: 372px 0 380px 0;
+}
+#banner .banner_overlay .banner_heading h3 {
+  text-transform: capitalize;
+  display: block;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#banner .banner_overlay .banner_heading h1 {
+  text-transform: capitalize;
+  font-size: 52px;
+  font-weight: 800;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+#banner .banner_overlay .banner_heading .bannerP {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 24px;
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+}
+#banner .banner_overlay .banner_heading .bannerbutton {
+  margin-top: 52px;
+}
+#banner .banner_overlay .banner_heading .bannerbutton button {
+  padding: 21px 38px 18px 38px;
+  display: inline-block;
+  border-bottom: 3px solid #736357;
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #998675;
+}
+
+/* experties part---------------*/
+#experties {
+  padding: 82px 0;
+}
+#experties .expItems {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+#experties .expItems .icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+#experties .expItems .icon .icon1 {
+  width: 100%;
+  height: 100%;
+}
+#experties .expItems .icon .icon2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#experties .expItems h6 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #555555;
+}
+#experties .expItems p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  display: block;
+  text-transform: capitalize;
+  color: #8c8c8c;
+}
+#experties .expItems:hover .icon2 {
+  display: block;
+}
+#experties .expItems:hover .icon1 {
+  display: none;
+}
+#experties .expItems:hover h6 {
+  color: #c7b299;
+}
+#experties .expItems:hover::after {
+  background: #c7b299;
+}
+#experties .expItems::after {
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: #f1eee9;
+}
+#experties .expItems .same {
+  padding-bottom: 9px;
+}
+#experties .expItems .gex {
+  width: 45px;
+  height: 45px;
+}
+
+/* realisation part---------------*/
+#realisation .re_heading {
+  text-align: center;
+}
+#realisation .re_heading h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+  text-transform: capitalize;
+}
+#realisation .re_heading p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  display: block;
+  text-transform: capitalize;
+  color: #8c8c8c;
+  max-width: 730px;
+  margin: auto;
+}
+#realisation .res_img {
+  margin-top: 36px;
+  width: 100%;
+}
+#realisation .res_img img {
+  width: 100%;
+  transform: scaleX(1.05);
+}
+
+/* wordpress part---------------*/
+#wordpress {
+  padding: 42px 0;
+  background: green;
+}
+#wordpress .wordpress_heading h5 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+#wordpress .wordpress_heading h5 .waxom {
+  color: #c7b299;
+}
+#wordpress .wordpress_heading p {
+  color: #615855;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+#wordpress .bannerbutton {
+  display: block;
+  text-align: right;
+}
+#wordpress .bannerbutton button {
+  padding: 21px 38px 18px 38px;
+  display: inline-block;
+  border-bottom: 3px solid #736357;
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #998675;
+}/*# sourceMappingURL=style.css.map */
