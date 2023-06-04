@@ -495,13 +495,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-family: "montseerat", sans-serif;
 }
-#prototype .protoText .mobul li .fa-chevron-right {
+#prototype .protoText .mobul li i {
   background: rgba(17, 17, 17, 0.5019607843);
-  margin-right: 30px;
+  margin-right: 10px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   font-size: 10px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
 }
 
 #counter {
